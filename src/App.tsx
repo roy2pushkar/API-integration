@@ -37,14 +37,7 @@ const [name, setName] = useState<string>('');
   const [avtar, setAvtar] = useState<string>('');
     const [deletedData, setDeletedData] = useState<UserData[]>([]);
 
-  
 
-  //useEffect(() => {
-    //axios.get('https://reqres.in/api/users?page=2')
-    //.then(res =>console.log(res))
-    //.catch(err => console.error(err));
-  //},[]
-  //)
  const getData = async () => {
     try {
       const res1 = await fetch("https://reqres.in/api/users?page=1");
